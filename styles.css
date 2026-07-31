@@ -378,6 +378,53 @@ h3 {
   margin: 0;
 }
 
+.practice-snapshot {
+  border-bottom: 1px solid var(--line-dark);
+  border-top: 1px solid var(--line-dark);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 64px;
+}
+
+.practice-snapshot > div {
+  min-width: 0;
+  padding: 28px 28px 30px 0;
+}
+
+.practice-snapshot > div + div {
+  border-left: 1px solid var(--line-dark);
+  padding-left: 28px;
+}
+
+.practice-snapshot strong,
+.practice-snapshot span {
+  display: block;
+}
+
+.practice-snapshot strong {
+  color: var(--white-pure);
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 2vw, 1.95rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.practice-snapshot span {
+  color: var(--gold);
+  font-size: 0.67rem;
+  font-weight: 800;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+.practice-snapshot p {
+  color: rgba(248, 246, 239, 0.62);
+  font-family: var(--serif);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+
 .book-band {
   background: #100f0e;
   color: var(--white-pure);
@@ -540,6 +587,66 @@ blockquote {
   font-size: 1.12rem;
   line-height: 1.45;
   margin: 0;
+}
+
+.tools-list > .companion-resource {
+  display: block;
+  padding: 28px 0 0;
+}
+
+.companion-resource > p:first-child {
+  color: rgba(23, 23, 19, 0.78);
+  max-width: 720px;
+}
+
+.companion-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.companion-download,
+.companion-question {
+  align-items: center;
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 800;
+  gap: 16px;
+  justify-content: space-between;
+  letter-spacing: 0;
+  min-height: 48px;
+  padding: 14px 18px;
+}
+
+.companion-download {
+  background: var(--black);
+  color: var(--white);
+}
+
+.companion-question {
+  border: 1px solid rgba(23, 23, 19, 0.42);
+  color: var(--ink);
+}
+
+.companion-download:hover,
+.companion-download:focus-visible {
+  background: #79242a;
+}
+
+.companion-question:hover,
+.companion-question:focus-visible {
+  border-color: #79242a;
+  color: #79242a;
+}
+
+.tools-list .companion-note {
+  color: rgba(23, 23, 19, 0.62);
+  font-family: var(--sans);
+  font-size: 0.77rem;
+  line-height: 1.55;
+  margin-top: 18px;
+  max-width: 700px;
 }
 
 .writing-band {
@@ -863,7 +970,8 @@ footer p {
   .principles,
   .roles,
   .chapter-list,
-  .about-story {
+  .about-story,
+  .practice-snapshot {
     grid-template-columns: 1fr;
   }
 
@@ -883,6 +991,16 @@ footer p {
   .about-story {
     gap: 28px;
     margin-top: 54px;
+  }
+
+  .practice-snapshot > div {
+    padding: 24px 0;
+  }
+
+  .practice-snapshot > div + div {
+    border-left: 0;
+    border-top: 1px solid var(--line-dark);
+    padding-left: 0;
   }
 
   .book-line {
