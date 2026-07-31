@@ -1252,14 +1252,33 @@ footer p {
 
 @media (max-width: 720px) {
   .site-header {
+    height: 148px;
+    justify-content: flex-start;
+    padding-bottom: 12px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 18px;
+  }
+
+  .site-nav {
+    display: grid;
+    gap: 0 12px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 8px;
+    overflow: visible;
+  }
+
+  .site-nav a {
+    font-size: 0.68rem;
+    min-height: 32px;
+    padding: 8px 0 6px;
+    text-align: center;
   }
 
   .hero {
     align-items: end;
     min-height: 82svh;
-    padding: 154px 24px 82px;
+    padding: 184px 24px 72px;
   }
 
   .hero-image {
@@ -1430,6 +1449,14 @@ footer p {
 }
 
 @media (max-width: 420px) {
+  .site-nav {
+    gap: 0 8px;
+  }
+
+  .site-nav a {
+    font-size: 0.65rem;
+  }
+
   h1 {
     font-size: 3.15rem;
   }
