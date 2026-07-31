@@ -840,6 +840,10 @@ blockquote {
   max-width: 1100px;
 }
 
+.field-scan-title-line {
+  display: block;
+}
+
 .utility-hero-copy > p:last-of-type {
   color: rgba(248, 246, 239, 0.74);
   font-family: var(--serif);
