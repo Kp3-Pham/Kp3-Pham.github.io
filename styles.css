@@ -750,6 +750,28 @@ blockquote {
   margin: 8px 0 0;
 }
 
+.field-notes-form {
+  margin-top: 28px;
+  min-height: 66px;
+}
+
+.field-notes-form .formkit-fields {
+  display: grid !important;
+  gap: 10px !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.field-notes-form .formkit-field,
+.field-notes-form .formkit-submit {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.field-notes-form .formkit-powered-by-convertkit {
+  filter: invert(1);
+  opacity: 0.62 !important;
+}
+
 .field-notes-preview {
   align-items: center;
   background: var(--red);
@@ -1392,6 +1414,10 @@ footer p {
 
   .field-notes-panel {
     padding: 26px 22px;
+  }
+
+  .field-notes-form {
+    min-height: 130px;
   }
 
   .practice-snapshot > div {
