@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Private Practice Journal | Human Potential Practice Studio</title>
+    <meta
+      name="description"
+      content="A device-local daily, weekly, and four-week reflection journal by Pham."
+    >
+    <meta name="theme-color" content="#0b0b09">
+    <link rel="icon" href="favicon.svg?v=brand-1">
+    <link rel="stylesheet" href="styles.css?v=studio-1">
+    <script src="human-potential-journal.js?v=studio-1" defer></script>
+  </head>
+  <body class="utility-body journal-body">
+    <a class="skip-link" href="#journal-main">Skip to journal</a>
+    <header class="site-header utility-header">
+      <a class="wordmark" href="index.html" aria-label="Pham, home">
+        <span>Pham</span>
+        <small>The Art of War for Educators</small>
+      </a>
+      <nav class="site-nav" aria-label="Journal navigation">
+        <a href="human-potential-studio.html">Practice Studio</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main id="journal-main" class="journal-main">
+      <section class="journal-intro">
+        <p class="section-kicker">Private digital route</p>
+        <h1>Your Human Potential Practice Journal</h1>
+        <p>
+          Write honestly. Keep identities out. Let evidence challenge the
+          story. Your entries stay in this browser unless you choose to copy
+          or download them.
+        </p>
+          <div class="journal-local-note" role="status" aria-live="polite">
+            <strong>Local by design.</strong>
+            <span id="journal-status">Preparing your private journal…</span>
+            <span> Local storage is not encrypted. Anyone using this browser profile may be able to read it.</span>
+        </div>
+      </section>
+
+      <section class="journal-workspace" aria-label="Reflection workspace">
+        <div class="journal-mode-tabs" role="tablist" aria-label="Review period">
+          <button type="button" role="tab" aria-selected="true" class="is-active" data-mode="daily">Daily evidence</button>
+          <button type="button" role="tab" aria-selected="false" data-mode="weekly">Weekly pattern</button>
+          <button type="button" role="tab" aria-selected="false" data-mode="cycle">Four-week cycle</button>
+        </div>
+
+        <form class="journal-form" id="journal-form" autocomplete="off">
+          <div class="journal-form-heading">
+            <p id="journal-mode-title">Daily evidence</p>
+            <span>Observation → question → wiser move</span>
+          </div>
+          <div id="journal-fields"></div>
+        </form>
+
+        <aside class="journal-export" aria-labelledby="journal-export-title">
+          <p class="section-kicker">Optional AI-supported review</p>
+          <h2 id="journal-export-title">Complete the Human Check before anything leaves your browser.</h2>
+          <p>
+            The Studio cannot determine whether your entry is anonymous or
+            permitted. You must review it and confirm all three conditions.
+          </p>
+          <div class="journal-gates">
+            <label>
+              <input type="checkbox" id="gate-authorized">
+              <span>The exact AI system, purpose, and document access are authorized.</span>
+            </label>
+            <label>
+              <input type="checkbox" id="gate-private">
+              <span>No names, nicknames, pseudonyms, traceable learner codes, exact class labels, identifying dates, work images, voices, identifiable combinations, confidential records, diagnoses, safeguarding information, or private comments are included.</span>
+            </label>
+            <label>
+              <input type="checkbox" id="gate-reviewed">
+              <span>I reviewed the draft myself and accept responsibility for what I share and decide.</span>
+            </label>
+          </div>
+          <div class="journal-actions">
+            <button type="button" id="copy-draft" disabled>Copy AI review draft</button>
+            <button type="button" id="download-draft" disabled>Download review draft</button>
+            <button type="button" class="journal-clear" id="clear-journal">Clear local journal</button>
+          </div>
+          <p class="journal-export-note">
+            Give an approved AI system the public blank-template link if it
+            needs to understand the structure. Do not make your completed
+            journal public or use an unrestricted sharing link for convenience.
+            Removing a name alone does not make an entry anonymous.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="utility-footer">
+      <div>
+        <p class="footer-name">Pham</p>
+        <p>The Human Potential Practice Studio</p>
+      </div>
+      <div class="footer-meta">
+        <p>© 2026 Pham</p>
+        <p>An independent, human-governed resource.</p>
+      </div>
+    </footer>
+  </body>
+</html>
